@@ -1,0 +1,29 @@
+body {
+    background-color: #06e1f5;
+    }
+
+table{
+    background-color: rgb(247, 247, 247);
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    padding-top: 20%;
+}
+
+td,
+th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 7px 5px;
+}
+
+th{
+    font-family: cursive;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }

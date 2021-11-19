@@ -2,40 +2,49 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 import { Component } from "react";
+import MusicLibrary from "./Components/MusicLibrary/MusicLibrary";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      songs: []
+    }
   }
 
-  getAll = async () => {
-    await axios
-      .get("http://127.0.0.1:8000/music/")
-      .then((res) => this.setState({songs:res.data}))
-  };
+  componentDidMount(){
+    this.getSongs();
+  }
+
+  async getSongs(){
+    let response = await axios.get("http://127.0.0.1:8000/music/")
+    console.log(response.data);
+    this.setState({
+      songs: response.data
+    })
+  }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <button onClick={this.getAll}> Click for All Songs</button>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <MusicLibrary songs={this.state.songs}></MusicLibrary>
+
       </div>
     );
   }
 }
 
 export default App;
+
+
+  // getAll = async () => {
+  //   await axios
+  //     .get("http://127.0.0.1:8000/music/")
+  //     .then((res) => this.setState({songs:res.data}))
+  // };
+
+  // handleChange = (event) => {
+  //   this.setState({
+  //     [event.target.name]: event.target.value
+  //   })
+  // }
