@@ -1,11 +1,11 @@
 body {
-    background-color: #06e1f5;
-    }
+    background-image: linear-gradient(to right, #0e0ed7, rgb(247, 0, 210));
+}
 
 table{
     background-color: rgb(247, 247, 247);
     border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid rgb(0, 0, 0);
     letter-spacing: 1px;
     font-family: sans-serif;
     font-size: .8rem;
@@ -20,6 +20,7 @@ th {
 
 th{
     font-family: cursive;
+    text-shadow: 1px 1px 1px rgb(154, 154, 154), 2px 2px 1px #000;
 }
 
 .center {
