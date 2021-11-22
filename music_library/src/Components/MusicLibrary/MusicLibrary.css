@@ -20,11 +20,17 @@ th {
 
 th{
     font-family: cursive;
-    text-shadow: 1px 1px 1px rgb(154, 154, 154), 2px 2px 1px #000;
+    text-shadow: 1px 1px 1px #9a9a9a, 2px 2px 1px rgb(4, 3, 3);
+    height: 80%;
+    width: auto;
 }
 
 .center {
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-  }
+}
+
+tr {
+    background-color: rgb(214, 226, 242);
+}
