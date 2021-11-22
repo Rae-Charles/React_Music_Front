@@ -78,10 +78,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-  // getAll = async () => {
-  //   await axios
-  //     .get("http://127.0.0.1:8000/music/")
-  //     .then((res) => this.setState({songs:res.data}))
-  // };
