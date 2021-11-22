@@ -1,6 +1,6 @@
 label {
     padding: 12px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .newSong {
@@ -12,5 +12,5 @@ label {
 h3 {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }

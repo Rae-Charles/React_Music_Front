@@ -5,7 +5,7 @@ function SearchBar(props) {
     return (
         <div className="searchBar">
         <input type='text' name='search' value = {props.termToFilter} onChange={props.handleChange}/>
-        <button type= 'submit'  onClick={()=>{props.filterSongs(" ")}}>Search By Genre</button>
+        <button type= 'submit'  onClick={()=>{props.filterSongs(" ")}}>Search</button>
         </div>
     )
 }
